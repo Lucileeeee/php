@@ -6,7 +6,7 @@
  * @param array $account [firstname, lastname, email, password]
  * @return void
  */
-function addAccount(PDO $bdd, array $account): void|string {
+function addAccount(PDO $bdd, array $account): void {
     try{
         $requete = "INSERT INTO account(firstname, lastname, email, `password`)
         VALUE(?,?,?,?)";
@@ -28,7 +28,7 @@ function addAccount(PDO $bdd, array $account): void|string {
  * @param array $account [firstname, lastname, ancien-email, nouvel-mail]
  * @return void
  */
-function updateAccount(PDO $bdd, array $account): void|string {
+function updateAccount(PDO $bdd, array $account): void {
     try {
         $requete = "UPDATE account SET firstname=?, lastname=?, email=? 
         WHERE email=?";
@@ -49,7 +49,7 @@ function updateAccount(PDO $bdd, array $account): void|string {
  * @param string $email
  * @return void
  */
-function deleteAccount(PDO $bdd, string $email): void|string {
+function deleteAccount(PDO $bdd, string $email): void {
     try{
         $requete = "DELETE FROM account WHERE email=?";
         $req = $bdd->prepare($requete);
