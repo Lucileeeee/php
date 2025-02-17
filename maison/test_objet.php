@@ -1,7 +1,7 @@
 <?php
 include './maison.php';
 
-$villa = new Maison("Villa Gracias", 200, 400, 5);
+$villa = new Maison("Villa Gracias", 200, 400, 0);
 
 
 echo "Nom : ". $villa->getNom();

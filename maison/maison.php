@@ -56,7 +56,7 @@ class Maison{
 
     //METHODE
     public function surface():void{
-        $result = ($this->getLargeur() * $this-> getLongueur() )* $this->getNbrEtage();
+        $result = ($this->getLargeur() * $this-> getLongueur() )* ($this->getNbrEtage()+1);
         echo '<br>Superficie de la maison'.$this->getNom().'est égale à : '.$result . ' m2';
     }
 }
