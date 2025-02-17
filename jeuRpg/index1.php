@@ -14,5 +14,3 @@ $guerrier = new Guerrier('Gege le Guerrier', new Arc(), 'guerrier');
 $guerrier->afficher();
 //(?string $nom, ?InterfaceArme $comportementArme, ?string $type)
 
-/* $colvert = new Colvert("Howard", new VolerAvecAille());
-$leurre = new Leurre("Gilbert", new NeVolPas()); */
