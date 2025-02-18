@@ -1,6 +1,7 @@
 <?php
-include './AbstractPersonnage/abstractPerso.php';
 include './Interface/interfaceArme.php';
+include './AbstractPersonnage/abstractPerso.php';
+
 
 include './ComportementArme/arc.php';
 include './ComportementArme/epee.php';
