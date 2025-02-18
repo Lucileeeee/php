@@ -35,11 +35,18 @@ abstract class AbstractPersonnage{
         $this->type = $newType;
         return $this;
     }
+    public function attaquer(){
+        var_dump($this->getComportementArme()) ;
+        echo  'Type de Perso :' . $this->getType();
+        if($this->getType() === 'magicien' && $this->getComportementArme($this->getType()) === 'ProjectileMagique'){
+            //on peut attaquer avec
+        } else {
+            $this->getComportementArme()->attaquer();
+        }
+    } 
 
     //METHOD
     public abstract function afficher():void;
 
-    public function attaquer():void{
-        //todo 
-    }
+    
 }

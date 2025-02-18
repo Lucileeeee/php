@@ -1,4 +1,5 @@
 <?php
 interface InterfaceArme {
-    public function arme():void;
+    public function attaquer():int;
+    public function afficher():void;
 }

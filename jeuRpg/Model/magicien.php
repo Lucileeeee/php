@@ -13,4 +13,8 @@ class Magicien extends AbstractPersonnage {
         $this->mana = $newMana;
         return $this;
     }
+
+    public function attaquer():void{
+        
+    }
 }

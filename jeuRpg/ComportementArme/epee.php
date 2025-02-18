@@ -4,8 +4,12 @@ class Epee implements InterfaceArme{
     private ?int $durabilite;
     private ?string $type;
 
-    public function arme():void{
-        echo "<p>Je suis une épee </p>";
+    public function attaquer():int{
+        return 6;
+        //todo changer 
+    }
+    public function afficher():void{
+        echo "<p>Je suis une Épée </p>";
     }
     //getter setter
     public function getDurabilite():int{
